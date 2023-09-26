@@ -12,10 +12,15 @@ import { OfferedCourseClassScheduleRoutes } from '../modules/offeredCourseClassS
 import { StudentEnrolledCourseRoutes } from '../modules/studentEnrolledCourse/studentEnrolledCourse.routes';
 import { StudentEnrolledCourseMarkRoutes } from '../modules/studentEnrolledCourseMark/studentEnrolledCourseMark.routes';
 import { StudentSemesterPaymentRoutes } from '../modules/studentSemesterPayment/studentSemesterPayment.routes';
+import { UserRoutes } from '../modules/user/user.routes';
 
 const router = express.Router();
 
 const moduleRoutes = [
+  {
+    path: '/users',
+    routes: UserRoutes
+  },
   {
     path: '/academic-faculties',
     routes: AcademicFacultyRoutes
