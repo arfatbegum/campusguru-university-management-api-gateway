@@ -15,6 +15,7 @@ import { StudentSemesterPaymentRoutes } from '../modules/studentSemesterPayment/
 import { UserRoutes } from '../modules/user/user.routes';
 import { ManagementDepartmentRoutes } from '../modules/managementDepartment/managementDepartment.routes';
 import { AdminRoutes } from '../modules/admin/admin.routes';
+import { FacultyRoutes } from '../modules/faculty/faculty.routes';
 
 const router = express.Router();
 
@@ -26,6 +27,10 @@ const moduleRoutes = [
   {
     path: '/admins',
     routes: AdminRoutes
+  },
+  {
+    path: '/faculties',
+    routes: FacultyRoutes
   },
   {
     path: '/academic-faculties',
